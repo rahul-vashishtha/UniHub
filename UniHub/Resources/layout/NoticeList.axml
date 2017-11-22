@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:clickable="false"
+    android:paddingTop="5dp">
+    <LinearLayout
+        android:id="@+id/lstIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:background="@drawable/ripple_right"
+        android:layout_gravity="center"
+        android:layout_marginRight="7dp">
+        <TextView
+            android:id="@+id/lstTxtExt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="5dip"
+            android:gravity="center"
+            android:textSize="20dip"
+            android:textStyle="bold"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:text="PDF"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/listCover"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingLeft="5dip"
+        android:layout_marginLeft="3dp"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:background="@drawable/ripple"
+        android:backgroundTint="@android:color/white">
+        <TextView
+            android:id="@+id/lstTxtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingLeft="12dip"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:text="HERE IS THE CONTENT FOR NOTICE NAME LIKE NOTICE ABOUT SCHOLARSHIP ETC ARE WRITTEN HERE"
+            android:textColor="@android:color/black"
+            android:maxLines="2"
+            android:minLines="1"
+            android:ellipsize="end" />
+        <TextView
+            android:id="@+id/lstTxtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="right"
+            android:textSize="12sp"
+            android:paddingRight="5dip"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:text="HERE IS THE DESCRIPTION FOR NOTICE NAME"
+            android:textColor="#404040" />
+    </LinearLayout>
+</LinearLayout>

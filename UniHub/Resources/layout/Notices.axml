@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/NoticesLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    android:background="@drawable/blue_gradient">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:id="@+id/lower_oval"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:src="@drawable/logo"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:padding="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:id="@+id/base_layout"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/swipeRefresh">
+            <ListView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listNotices"
+                android:divider="@null"
+                android:dividerHeight="12dp"
+                android:paddingTop="9dp"
+                android:clipChildren="false"
+                android:clipToPadding="false" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</LinearLayout>

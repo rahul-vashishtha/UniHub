@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/NoticesLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    android:background="@drawable/blue_gradient">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:id="@+id/lower_oval"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:src="@drawable/logo"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:padding="15dp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:id="@+id/NewsScroll"
+        android:layout_weight="80"
+        android:fillViewport="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/NewsBaseLayout"
+            android:minWidth="25px"
+            android:minHeight="25px">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/NewsContent"
+                android:layout_gravity="center_horizontal"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:textSize="16sp"
+                android:padding="6dp"
+                android:text="HERE IS THE CONTENT FOR NOTICE NAME LIKE NOTICE ABOUT SCHOLARSHIP ETC ARE WRITTEN HERE" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

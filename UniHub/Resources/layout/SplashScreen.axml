@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_weight="100"
+    android:layout_gravity="center"
+    android:background="#FFFFFF">
+    <ImageView
+        android:src="@drawable/UniHubLogo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SplashLogo"
+        android:layout_weight="10"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:layout_margin="100dp" />
+    <ImageView
+        android:src="@drawable/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/footerLogo"
+        android:layout_weight="90"
+        android:paddingBottom="10dp"
+        android:paddingTop="8dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp" />
+</LinearLayout>
